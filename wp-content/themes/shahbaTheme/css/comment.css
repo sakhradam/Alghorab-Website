@@ -1,0 +1,33 @@
+.comment-list {
+    padding: 0;
+    list-style: none;
+}
+.comment-author {
+    float: left;
+}
+.comment_meta{
+    float: right;
+    margin: 0;
+}
+.comment-meta{
+    margin-bottom: 8px;
+}
+.comment-content p{
+    margin-bottom: 5px
+}
+.reply i{
+    margin: 0 5px
+}
+.comment-author a {
+    color: #333;
+}
+.reply a {
+    color: #656565;
+    font-size: 12px;
+}
+.comment-list li .children {
+    padding-left: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+}

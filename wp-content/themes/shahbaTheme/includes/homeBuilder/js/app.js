@@ -1,0 +1,1 @@
+var blockApp = angular.module('blockApp', ['mainCtrl', 'blockService']);

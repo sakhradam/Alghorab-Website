@@ -1,0 +1,14 @@
+::-webkit-scrollbar  {width: 12px;}
+::-webkit-scrollbar-track-piece{ background:#fff;color: #fff;}
+::-webkit-scrollbar-thumb{ background:#D84833;color: #D84833;}
+::selection {color:#fff;background:#D84833;}
+::-moz-selection {color:#fff;background:#D84833;}
+.main_color,.main_color_hover:hover,.main_color:hover,a:hover{
+    color: #D84833!important;
+}
+.main_border_color,.section_title h1:before,.section_title h2:before,.main-footer{
+    border-color: #D84833!important;
+}
+.menu_section .navbar nav li:hover> a, .menu_section .navbar nav li.active a,.nav .open > a, .nav .open > a:hover, .nav .open > a:focus,.main_bg{
+    background: #D84833;
+}

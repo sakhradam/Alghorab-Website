@@ -1,0 +1,513 @@
+
+/*
+ *regles pour W3 total cache
+ */
+	#w3tc_form #database_cache:before, #w3tc_form #object_cache:before {
+			content: " WPSERVEUR vous déconseille l\'activation de cette option car elle ralentira fortement votre site sur nos systèmes ";
+			color: #f00;
+			padding: 10px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+	#database_cache, #object_cache {
+			background: #FDD;
+			padding-top:10px;
+		}
+/*
+ *regles pour les widgets WPS
+ */
+	#dashboard_widget_wpsecu {
+			background-color: #E1F8FF;
+		}
+	#dashboard_widget_wpserveur {
+			background-color: #E1FFED;
+		}
+	.options-general-php tr:nth-child(3), .options-general-php tr:nth-child(4) {
+			display: none;
+		} 
+/*
+ *regles pour le bouton purge varnish
+ */
+	li#wp-admin-bar-purge-varnish-cache-all a {
+			background: #88B92A;
+		}
+		li#wp-admin-bar-purge-varnish-cache-all a:hover {
+				background: #f1f1f1 !important;
+			}
+	li#wp-admin-bar-purge-varnish-cache-all a:before {
+			    content: "\f531";
+				margin-top: 2px;
+		}
+/*
+ *regles pour le bouton menu WPS
+ */
+	.wp-admin #wpadminbar #wp-admin-bar-link-wps>.ab-item:before {
+			    content: "\f115";
+				margin-top: 2px;
+		}
+/*
+ *regles pour les plugins conseilles WPS
+ */
+	#block-bad-queries.active .column-primary,
+	#plugin-security-scanner.active .column-primary,
+	#varnish-http-purge.active .column-primary,
+	#wps-hide-login.active .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100% #f7fcfe !important;
+		}
+	#block-bad-queries.active.update .column-primary, 
+	#plugin-security-scanner.active.update .column-primary, 
+	#varnish-http-purge.active.update .column-primary, 
+	#wps-hide-login.active.update .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100% #fef7f1 !important;
+		}
+	#block-bad-queries.inactive .column-primary,
+	#plugin-security-scanner.inactive .column-primary,
+	#varnish-http-purge.inactive .column-primary,
+	#wps-hide-login.inactive .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100%;
+		}
+	#block-bad-queries.inactive.update .column-primary,
+	#plugin-security-scanner.inactive.update .column-primary,
+	#varnish-http-purge.inactive.update .column-primary,
+	#wps-hide-login.inactive.update .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100% #fff !important;
+		}
+	#block-bad-queries.active .column-description:after,
+	#varnish-http-purge.active .column-description:after {
+		content:"Plugin fortement recommandé par WPServeur ne pas désactiver sauf pour debug";
+		color: #85BA42;
+		}
+	#block-bad-queries.inactive .column-description:after,
+	#varnish-http-purge.inactive .column-description:after {
+		content:"Ce plugin est nécéssaire au bon fonctionnement de votre site sur WPServeur. Merci de bien vouloir réactiver ce plugin au plus vite.";
+		color: #BA4242;
+		}
+	#plugin-security-scanner.active .column-description:after,
+	#wps-hide-login.active .column-description:after {
+		content:"Plugin fortement recommandé par WPServeur. Il peut cependant êAtre désactivé si vous n\'en avez pas l\'utilité";
+		color: #85BA42;
+		}
+	#plugin-security-scanner.inactive .column-description:after,
+	#wps-hide-login.inactive .column-description:after {
+		content:"Plugin fortement recommandé par WPServeur. Il peut cependant êAtre désactivé si vous n\'en avez pas l\'utilité";
+		color: #85BA42;
+		}
+/*
+ *regles pour les plugins interdit sur WPServeur
+ */
+	#alo-easymail .check-column, #alo-easymail .column-description,
+	#akeebabackupcore .check-column, #akeebabackupcore .column-description,
+	#adminer .check-column, #adminer .column-description,
+	#autoptimize .check-column, #autoptimize .column-description,
+	#backup .check-column, #backup .column-description,
+	#backupbuddy .check-column, #backupbuddy .column-description,
+	#backup-scheduler .check-column, #backup-scheduler .column-description,
+	#backupwordpress .check-column, #backupwordpress .column-description,
+	#backwpup .check-column, #backwpup .column-description,
+	#better-wp-security .check-column, #better-wp-security .column-description,
+	#broken-link-checker .check-column, #broken-link-checker .column-description,
+	#contextual-related-posts .check-column, #contextual-related-posts .column-description,
+	#ewww-image-optimizer .check-column, #ewww-image-optimizer .column-description,
+	#fuzzy-seo-queries .check-column, #fuzzy-seo-queries .column-description,
+	#hc-custom-wp-admin-url .check-column, #hc-custom-wp-admin-url .column-description,
+	#hello-dolly .check-column, #hello-dolly .column-description,
+	#ad-injection .check-column, #ad-injection .column-description,
+	#the-codetree-backup .check-column, #the-codetree-backup .column-description,
+	#no-revisions .check-column, #no-revisions .column-description,
+	#ozh-who-sees-ads .check-column, #ozh-who-sees-ads .column-description,
+	#recommend-a-friend .check-column, #recommend-a-friend .column-description,
+	#seo-alrp .check-column, #seo-alrp .column-description,
+	#si-captcha-for-wordpress .check-column, #si-captcha-for-wordpress .column-description,
+	#similar-posts .check-column, #similar-posts .column-description,
+	#super-post .check-column, #super-post .column-description,
+	#superslider .check-column, #superslider .column-description,
+	#tweet-blender .check-column, #tweet-blender .column-description,
+	#updraftplus .check-column, #updraftplus .column-description,
+	#wordfence .check-column, #wordfence .column-description,
+	#wp-db-backup .check-column, #wp-db-backup .column-description,
+	#wordpress-gzip-compression .check-column, #wordpress-gzip-compression .column-description,
+	#wp-database-optimizer .check-column, #wp-database-optimizer .column-description,
+	#wp-engine-automated-migration .check-column, #wp-engine-automated-migration .column-description,
+	#wp-file-cache .check-column, #wp-file-cache .column-description,
+	#wp-slimstat .check-column, #wp-slimstat .column-description,
+	#wp-super-cache .check-column, #wp-super-cache .column-description,
+	#wp-symposium-pro .check-column, #wp-symposium-pro .column-description,
+	#wp-dbmanager .check-column, #wp-dbmanager .column-description,
+	#wp-optimize .check-column, #wp-optimize .column-description,
+	#wp-postviews .check-column, #wp-postviews .column-description,
+	#wp-spamshield .check-column, #wp-spamshield .column-description,
+	#yet-another-featured-posts-plugin .check-column, #yet-another-featured-posts-plugin .column-description,
+	#yet-another-related-posts-plugin .check-column, #yet-another-related-posts-plugin .column-description {
+		background:#FDDCDC !important;
+		}
+	#alo-easymail .check-column,
+	#akeebabackupcore .check-column,
+	#adminer .check-column,
+	#autoptimize .check-column,
+	#backup .check-column,
+	#backupbuddy .check-column,
+	#backup-scheduler .check-column,
+	#backupwordpress .check-column,
+	#backwpup .check-column,
+	#better-wp-security .check-column,
+	#broken-link-checker .check-column,
+	#contextual-related-posts .check-column,
+	#ewww-image-optimizer .check-column,
+	#fuzzy-seo-queries .check-column,
+	#hc-custom-wp-admin-url .check-column,
+	#hello-dolly .check-column,
+	#ad-injection .check-column,
+	#the-codetree-backup .check-column,
+	#no-revisions .check-column,
+	#ozh-who-sees-ads .check-column,
+	#recommend-a-friend .check-column,
+	#seo-alrp .check-column,
+	#si-captcha-for-wordpress .check-column,
+	#similar-posts .check-column,
+	#super-post .check-column,
+	#superslider .check-column,
+	#tweet-blender .check-column,
+	#updraftplus .check-column,
+	#wordfence .check-column,
+	#wp-db-backup .check-column,
+	#wordpress-gzip-compression .check-column,
+	#wp-database-optimizer .check-column,
+	#wp-engine-automated-migration .check-column,
+	#wp-file-cache .check-column,
+	#wp-slimstat .check-column,
+	#wp-super-cache .check-column,
+	#wp-symposium-pro .check-column,
+	#wp-dbmanager .check-column,
+	#wp-optimize .check-column,
+	#wp-postviews .check-column,
+	#wp-spamshield .check-column,
+	#yet-another-featured-posts-plugin .check-column,
+	#yet-another-related-posts-plugin .check-column {
+		border-left: 4px solid #D20000 !important;
+	}
+	#alo-easymail .check-column,
+	#akeebabackupcore .column-primary,
+	#adminer .column-primary,
+	#autoptimize .column-primary,
+	#backup .column-primary,
+	#backupbuddy .column-primary,
+	#backup-scheduler .column-primary,
+	#backupwordpress .column-primary,
+	#backwpup .column-primary,
+	#better-wp-security .column-primary,
+	#broken-link-checker .column-primary,
+	#contextual-related-posts .column-primary,
+	#ewww-image-optimizer .column-primary,
+	#fuzzy-seo-queries .column-primary,
+	#hc-custom-wp-admin-url .column-primary,
+	#hello-dolly .column-primary,
+	#ad-injection .column-primary,
+	#the-codetree-backup .column-primary,
+	#no-revisions .column-primary,
+	#ozh-who-sees-ads .column-primary,
+	#recommend-a-friend .column-primary,
+	#seo-alrp .column-primary,
+	#si-captcha-for-wordpress .column-primary,
+	#similar-posts .column-primary,
+	#super-post .column-primary,
+	#superslider .column-primary,
+	#tweet-blender .column-primary,
+	#updraftplus .column-primary,
+	#wordfence .column-primary,
+	#wp-db-backup .column-primary,
+	#wordpress-gzip-compression .column-primary,
+	#wp-database-optimizer .column-primary,
+	#wp-engine-automated-migration .column-primary,
+	#wp-file-cache .column-primary,
+	#wp-slimstat .column-primary,
+	#wp-super-cache .column-primary,
+	#wp-symposium-pro .column-primary,
+	#wp-dbmanager .column-primary,
+	#wp-optimize .column-primary,
+	#wp-postviews .column-primary,
+	#wp-spamshield .column-primary,
+	#yet-another-featured-posts-plugin .column-primary,
+	#yet-another-related-posts-plugin .column-primary {
+		background: url(not-allowed-plugin.png) no-repeat 97% 100% #FDDCDC !important;
+		}
+	#alo-easymail .column-description:after, 
+	#akeebabackupcore .column-description:after,
+	#adminer .column-description:after,
+	#autoptimize .column-description:after,
+	#backup .column-description:after,
+	#backupbuddy .column-description:after,
+	#backup-scheduler .column-description:after,
+	#backupwordpress .column-description:after,
+	#backwpup .column-description:after,
+	#better-wp-security .column-description:after,
+	#broken-link-checker .column-description:after,
+	#contextual-related-posts .column-description:after,
+	#ewww-image-optimizer .column-description:after,
+	#fuzzy-seo-queries .column-description:after,
+	#hc-custom-wp-admin-url .column-description:after,
+	#hello-dolly .column-description:after,
+	#ad-injection .column-description:after,
+	#the-codetree-backup .column-description:after,
+	#no-revisions .column-description:after,
+	#ozh-who-sees-ads .column-description:after,
+	#recommend-a-friend .column-description:after,
+	#seo-alrp .column-description:after,
+	#si-captcha-for-wordpress .column-description:after,
+	#similar-posts .column-description:after,
+	#super-post .column-description:after,
+	#superslider .column-description:after,
+	#tweet-blender .column-description:after,
+	#updraftplus .column-description:after,
+	#wordfence .column-description:after,
+	#wp-db-backup .column-description:after,
+	#wordpress-gzip-compression .column-description:after,
+	#wp-database-optimizer .column-description:after,
+	#wp-engine-automated-migration .column-description:after,
+	#wp-file-cache .column-description:after,
+	#wp-slimstat .column-description:after,
+	#wp-super-cache .column-description:after,
+	#wp-symposium-pro .column-description:after,
+	#wp-dbmanager .column-description:after,
+	#wp-optimize .column-description:after,
+	#wp-postviews .column-description:after,
+	#wp-spamshield .column-description:after,
+	#yet-another-featured-posts-plugin .column-description:after,
+	#yet-another-related-posts-plugin .column-description:after {
+		content:"Ce plugin est interdit sur WPServeur, merci de le supprimer. Dans tous les cas il sera automatiquement désactivé cette nuit par nos systèmes.";
+		color: #ff0000;
+		}
+		
+/*
+ *Hack pour Wordpress 4.5 qui as transformé les id des plugins en data-slug
+ */
+/*
+ *regles pour les plugins conseilles WPS
+ */
+	[data-slug="block-bad-queries"].active .column-primary,
+	[data-slug="plugin-security-scanner"].active .column-primary,
+	[data-slug="varnish-http-purge"].active .column-primary,
+	[data-slug="wps-hide-login"].active .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100% #f7fcfe !important;
+		}
+	[data-slug="block-bad-queries"].active.update .column-primary, 
+	[data-slug="plugin-security-scanner"].active.update .column-primary, 
+	[data-slug="varnish-http-purge"].active.update .column-primary, 
+	[data-slug="wps-hide-login"].active.update .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100% #fef7f1 !important;
+		}
+	[data-slug="block-bad-queries"].inactive .column-primary,
+	[data-slug="plugin-security-scanner"].inactive .column-primary,
+	[data-slug="varnish-http-purge"].inactive .column-primary,
+	[data-slug="wps-hide-login"].inactive .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100%;
+		}
+	[data-slug="block-bad-queries"].inactive.update .column-primary,
+	[data-slug="plugin-security-scanner"].inactive.update .column-primary,
+	[data-slug="varnish-http-purge"].inactive.update .column-primary,
+	[data-slug="wps-hide-login"].inactive.update .column-primary {
+		background: url(secu-plugin.png) no-repeat 97% 100% #fff !important;
+		}
+	[data-slug="block-bad-queries"].active .column-description:after,
+	[data-slug="varnish-http-purge"].active .column-description:after {
+		content:"Plugin fortement recommandé  par WPServeur ne pas désactiver sauf pour debug";
+		color: #85BA42;
+		}
+	[data-slug="block-bad-queries"].inactive .column-description:after,
+	[data-slug="varnish-http-purge"].inactive .column-description:after {
+		content:"Ce plugin est nécéssaire au bon fonctionnement de votre site sur WPServeur. Merci de bien vouloir réactiver ce plugin au plus vite.";
+		color: #BA4242;
+		}
+	[data-slug="plugin-security-scanner"].active .column-description:after,
+	[data-slug="wps-hide-login"].active .column-description:after {
+		content:"Plugin fortement recommandé par WPServeur. Il peut cependant être désactivé si vous n\'en avez pas l\'utilité";
+		color: #85BA42;
+		}
+	[data-slug="plugin-security-scanner"].inactive .column-description:after,
+	[data-slug="wps-hide-login"].inactive .column-description:after {
+		content:"Plugin fortement recommandé par WPServeur. Il peut cependant être désactivé si vous n\'en avez pas l\'utilité";
+		color: #85BA42;
+		}
+/*
+ *regles pour les plugins interdit sur WPServeur
+ */
+	[data-slug="alo-easymail"] .check-column, [data-slug="alo-easymail"]  .column-description,
+	[data-slug="akeebabackupcore"] .check-column, [data-slug="akeebabackupcore"]  .column-description,
+	[data-slug="adminer"] .check-column, [data-slug="adminer"]  .column-description,
+	[data-slug="autoptimize"] .check-column, [data-slug="autoptimize"]  .column-description,
+	[data-slug="backup"] .check-column, [data-slug="backup"]  .column-description,
+	[data-slug="backupbuddy"] .check-column, [data-slug="backupbuddy"]  .column-description,
+	[data-slug="backup-scheduler"] .check-column, [data-slug="backup-scheduler"]  .column-description,
+	[data-slug="backupwordpress"] .check-column, [data-slug="backupwordpress"]  .column-description,
+	[data-slug="backwpup"] .check-column, [data-slug="backwpup"]  .column-description,
+	[data-slug="better-wp-security"] .check-column, [data-slug="better-wp-security"]  .column-description,
+	[data-slug="broken-link-checker"] .check-column, [data-slug="broken-link-checker"]  .column-description,
+	[data-slug="contextual-related-posts"] .check-column, [data-slug="contextual-related-posts"]  .column-description,
+	[data-slug="ewww-image-optimizer"] .check-column, [data-slug="ewww-image-optimizer"]  .column-description,
+	[data-slug="fuzzy-seo-queries"] .check-column, [data-slug="fuzzy-seo-queries"]  .column-description,
+	[data-slug="hc-custom-wp-admin-url"] .check-column, [data-slug="hc-custom-wp-admin-url"]  .column-description,
+	[data-slug="hello-dolly"] .check-column, [data-slug="hello-dolly"]  .column-description,
+	[data-slug="ad-injection"] .check-column, [data-slug="ad-injection"]  .column-description,
+	[data-slug="the-codetree-backup"] .check-column, [data-slug="the-codetree-backup"]  .column-description,
+	[data-slug="no-revisions"] .check-column, [data-slug="no-revisions"]  .column-description,
+	[data-slug="ozh-who-sees-ads"] .check-column, [data-slug="ozh-who-sees-ads"]  .column-description,
+	[data-slug="recommend-a-friend"] .check-column, [data-slug="recommend-a-friend"]  .column-description,
+	[data-slug="seo-alrp"] .check-column, [data-slug="seo-alrp"]  .column-description,
+	[data-slug="si-captcha-for-wordpress"] .check-column, [data-slug="si-captcha-for-wordpress"]  .column-description,
+	[data-slug="similar-posts"] .check-column, [data-slug="similar-posts"]  .column-description,
+	[data-slug="super-post"] .check-column, [data-slug="super-post"]  .column-description,
+	[data-slug="superslider"] .check-column, [data-slug="superslider"]  .column-description,
+	[data-slug="tweet-blender"] .check-column, [data-slug="tweet-blender"]  .column-description,
+	[data-slug="updraftplus"] .check-column, [data-slug="updraftplus"]  .column-description,
+	[data-slug="wordfence"] .check-column, [data-slug="wordfence"]  .column-description,
+	[data-slug="wp-db-backup"] .check-column, [data-slug="wp-db-backup"]  .column-description,
+	[data-slug="wordpress-gzip-compression"] .check-column, [data-slug="wordpress-gzip-compression"]  .column-description,
+	[data-slug="wp-database-optimizer"] .check-column, [data-slug="wp-database-optimizer"]  .column-description,
+	[data-slug="wp-engine-automated-migration"] .check-column, [data-slug="wp-engine-automated-migration"]  .column-description,
+	[data-slug="wp-file-cache"] .check-column, [data-slug="wp-file-cache"]  .column-description,
+	[data-slug="wp-slimstat"] .check-column, [data-slug="wp-slimstat"]  .column-description,
+	[data-slug="wp-super-cache"] .check-column, [data-slug="wp-super-cache"]  .column-description,
+	[data-slug="wp-symposium-pro"] .check-column, [data-slug="wp-symposium-pro"]  .column-description,
+	[data-slug="wp-dbmanager"] .check-column, [data-slug="wp-dbmanager"]  .column-description,
+	[data-slug="wp-optimize"] .check-column, [data-slug="wp-optimize"]  .column-description,
+	[data-slug="wp-postviews"] .check-column, [data-slug="wp-postviews"]  .column-description,
+	[data-slug="wp-spamshield"] .check-column, [data-slug="wp-spamshield"]  .column-description,
+	[data-slug="yet-another-featured-posts-plugin"] .check-column, [data-slug="yet-another-featured-posts-plugin"]  .column-description,
+	[data-slug="yet-another-related-posts-plugin"] .check-column, [data-slug="yet-another-related-posts-plugin"]  .column-description {
+		background:#FDDCDC !important;
+		}
+	[data-slug="alo-easymail"] .check-column,
+	[data-slug="akeebabackupcore"] .check-column,
+	[data-slug="adminer"] .check-column,
+	[data-slug="autoptimize"] .check-column,
+	[data-slug="backup"] .check-column,
+	[data-slug="backupbuddy"] .check-column,
+	[data-slug="backup-scheduler"] .check-column,
+	[data-slug="backupwordpress"] .check-column,
+	[data-slug="backwpup"] .check-column,
+	[data-slug="better-wp-security"] .check-column,
+	[data-slug="broken-link-checker"] .check-column,
+	[data-slug="contextual-related-posts"] .check-column,
+	[data-slug="ewww-image-optimizer"] .check-column,
+	[data-slug="fuzzy-seo-queries"] .check-column,
+	[data-slug="hc-custom-wp-admin-url"] .check-column,
+	[data-slug="hello-dolly"] .check-column,
+	[data-slug="ad-injection"] .check-column,
+	[data-slug="the-codetree-backup"] .check-column,
+	[data-slug="no-revisions"] .check-column,
+	[data-slug="ozh-who-sees-ads"] .check-column,
+	[data-slug="recommend-a-friend"] .check-column,
+	[data-slug="seo-alrp"] .check-column,
+	[data-slug="si-captcha-for-wordpress"] .check-column,
+	[data-slug="similar-posts"] .check-column,
+	[data-slug="super-post"] .check-column,
+	[data-slug="superslider"] .check-column,
+	[data-slug="tweet-blender"] .check-column,
+	[data-slug="updraftplus"] .check-column,
+	[data-slug="wordfence"] .check-column,
+	[data-slug="wp-db-backup"] .check-column,
+	[data-slug="wordpress-gzip-compression"] .check-column,
+	[data-slug="wp-database-optimizer"] .check-column,
+	[data-slug="wp-engine-automated-migration"] .check-column,
+	[data-slug="wp-file-cache"] .check-column,
+	[data-slug="wp-slimstat"] .check-column,
+	[data-slug="wp-super-cache"] .check-column,
+	[data-slug="wp-symposium-pro"] .check-column,
+	[data-slug="wp-dbmanager"] .check-column,
+	[data-slug="wp-optimize"] .check-column,
+	[data-slug="wp-postviews"] .check-column,
+	[data-slug="wp-spamshield"] .check-column,
+	[data-slug="yet-another-featured-posts-plugin"] .check-column,
+	[data-slug="yet-another-related-posts-plugin"] .check-column {
+		border-left: 4px solid #D20000 !important;
+	}
+	[data-slug="alo-easymail"] .column-primary,
+	[data-slug="akeebabackupcore"] .column-primary,
+	[data-slug="adminer"] .column-primary,
+	[data-slug="autoptimize"] .column-primary,
+	[data-slug="backup"] .column-primary,
+	[data-slug="backupbuddy"] .column-primary,
+	[data-slug="backup-scheduler"] .column-primary,
+	[data-slug="backupwordpress"] .column-primary,
+	[data-slug="backwpup"] .column-primary,
+	[data-slug="better-wp-security"] .column-primary,
+	[data-slug="broken-link-checker"] .column-primary,
+	[data-slug="contextual-related-posts"] .column-primary,
+	[data-slug="ewww-image-optimizer"] .column-primary,
+	[data-slug="fuzzy-seo-queries"] .column-primary,
+	[data-slug="hc-custom-wp-admin-url"] .column-primary,
+	[data-slug="hello-dolly"] .column-primary,
+	[data-slug="ad-injection"] .column-primary,
+	[data-slug="the-codetree-backup"] .column-primary,
+	[data-slug="no-revisions"] .column-primary,
+	[data-slug="ozh-who-sees-ads"] .column-primary,
+	[data-slug="recommend-a-friend"] .column-primary,
+	[data-slug="seo-alrp"] .column-primary,
+	[data-slug="si-captcha-for-wordpress"] .column-primary,
+	[data-slug="similar-posts"] .column-primary,
+	[data-slug="super-post"] .column-primary,
+	[data-slug="superslider"] .column-primary,
+	[data-slug="tweet-blender"] .column-primary,
+	[data-slug="updraftplus"] .column-primary,
+	[data-slug="wordfence"] .column-primary,
+	[data-slug="wp-db-backup"] .column-primary,
+	[data-slug="wordpress-gzip-compression"] .column-primary,
+	[data-slug="wp-database-optimizer"] .column-primary,
+	[data-slug="wp-engine-automated-migration"] .column-primary,
+	[data-slug="wp-file-cache"] .column-primary,
+	[data-slug="wp-slimstat"] .column-primary,
+	[data-slug="wp-super-cache"] .column-primary,
+	[data-slug="wp-symposium-pro"] .column-primary,
+	[data-slug="wp-dbmanager"] .column-primary,
+	[data-slug="wp-optimize"] .column-primary,
+	[data-slug="wp-postviews"] .column-primary,
+	[data-slug="wp-spamshield"] .column-primary,
+	[data-slug="yet-another-featured-posts-plugin"] .column-primary,
+	[data-slug="yet-another-related-posts-plugin"] .column-primary {
+		background: url(not-allowed-plugin.png) no-repeat 97% 100% #FDDCDC !important;
+		}
+	[data-slug="alo-easymail"] .column-description:after, 
+	[data-slug="akeebabackupcore"] .column-description:after,
+	[data-slug="adminer"] .column-description:after,
+	[data-slug="autoptimize"] .column-description:after,
+	[data-slug="backup"] .column-description:after,
+	[data-slug="backupbuddy"] .column-description:after,
+	[data-slug="backup-scheduler"] .column-description:after,
+	[data-slug="backupwordpress"] .column-description:after,
+	[data-slug="backwpup"] .column-description:after,
+	[data-slug="better-wp-security"] .column-description:after,
+	[data-slug="broken-link-checker"] .column-description:after,
+	[data-slug="contextual-related-posts"] .column-description:after,
+	[data-slug="ewww-image-optimizer"] .column-description:after,
+	[data-slug="fuzzy-seo-queries"] .column-description:after,
+	[data-slug="hc-custom-wp-admin-url"] .column-description:after,
+	[data-slug="hello-dolly"] .column-description:after,
+	[data-slug="ad-injection"] .column-description:after,
+	[data-slug="the-codetree-backup"] .column-description:after,
+	[data-slug="no-revisions"] .column-description:after,
+	[data-slug="ozh-who-sees-ads"] .column-description:after,
+	[data-slug="recommend-a-friend"] .column-description:after,
+	[data-slug="seo-alrp"] .column-description:after,
+	[data-slug="si-captcha-for-wordpress"] .column-description:after,
+	[data-slug="similar-posts"] .column-description:after,
+	[data-slug="super-post"] .column-description:after,
+	[data-slug="superslider"] .column-description:after,
+	[data-slug="tweet-blender"] .column-description:after,
+	[data-slug="updraftplus"] .column-description:after,
+	[data-slug="wordfence"] .column-description:after,
+	[data-slug="wp-db-backup"] .column-description:after,
+	[data-slug="wordpress-gzip-compression"] .column-description:after,
+	[data-slug="wp-database-optimizer"] .column-description:after,
+	[data-slug="wp-engine-automated-migration"] .column-description:after,
+	[data-slug="wp-file-cache"] .column-description:after,
+	[data-slug="wp-slimstat"] .column-description:after,
+	[data-slug="wp-super-cache"] .column-description:after,
+	[data-slug="wp-symposium-pro"] .column-description:after,
+	[data-slug="wp-dbmanager"] .column-description:after,
+	[data-slug="wp-optimize"] .column-description:after,
+	[data-slug="wp-postviews"] .column-description:after,
+	[data-slug="wp-spamshield"] .column-description:after,
+	[data-slug="yet-another-featured-posts-plugin"] .column-description:after,
+	[data-slug="yet-another-related-posts-plugin"] .column-description:after {
+		content:"Ce plugin est interdit sur WPServeur, merci de le supprimer. Dans tous les cas il sera automatiquement désactivé cette nuit par nos systèmes.";
+		color: #ff0000;
+		}

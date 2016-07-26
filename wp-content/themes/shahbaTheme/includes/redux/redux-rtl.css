@@ -1,0 +1,50 @@
+#redux-container .redux-action_bar {
+    float: left;
+}
+
+#redux-container #expand_options, #redux-sidebar, .cb-enable, .cb-disable, .cb-enable span, .cb-disable span, #redux-footer #redux-share {
+    float: right;
+}
+
+#redux-main {
+    border-left: 0px;
+    margin-left: 0px;
+    border-right: 1px solid #d8d8d8;
+    margin-right: 201px;
+}
+
+.redux-group-tab-link-a span.group_title {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.redux_slider {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+/* BASHIR */
+.redux-main {
+margin-right: 201px!important;
+margin-left: 0px!important;
+}
+.redux-sidebar {
+float: right!important;
+}
+.redux-slider-container{
+    direction: ltr;
+}
+.admin-color-fresh .redux-sidebar .redux-group-menu li.active.hasSubSections a:after {
+left: 0!important;
+right: auto!important;
+}
+.admin-color-fresh .redux-sidebar .redux-group-menu li.hasSubSections a .extraIconSubsections{
+    float: left!important;
+}
+.redux-container-spinner .spinner-wrpr {
+direction: ltr;
+float: right;
+}
+.redux-container-typography .add-on{
+    float: right!important;
+}
+/* BASHIR */

@@ -1,0 +1,55 @@
+# Translation of Stable (latest release) in French (France)
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-11-03 08:59:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: varnish-http-purge.php:73
+msgid "Varnish HTTP Purge requires you to use custom permalinks. Please go to the <a href=\"options-permalink.php\">Permalinks Options Page</a> to configure them."
+msgstr "Varnish HTTP Purge requiert que vous utiliser les permaliens. Merci de vous rendre sur la <a href=\"options-permalink.php\">page d'options des permaliens</a> pour les configurer."
+
+#: varnish-http-purge.php:90
+msgid "<a href=\"%1$s\">Varnish HTTP Purge</a> automatically purges your posts when published or updated. Sometimes you need a manual flush."
+msgstr "<a href=\"%1$s\">Varnish HTTP Purge</a> purge automatiquement vos articles quand ils sont publiés ou mis à jour. Parfois vous avez besoin d'un vidage manuel."
+
+#: varnish-http-purge.php:91
+msgid "Press the button below to force it to purge your entire cache."
+msgstr "Appuyez sur le bouton ci-dessous pour l'obliger à vider votre cache entier."
+
+#: varnish-http-purge.php:95
+msgid "You do not have permission to purge the cache for the whole site. Please contact your adminstrator."
+msgstr "Vous n'avez pas la permission de vider le cache pour le site entier. Merci de contacter votre administrateur."
+
+#: varnish-http-purge.php:69
+msgid "Varnish cache purged!"
+msgstr "Cache Varnish vidé !"
+
+#: varnish-http-purge.php:82 varnish-http-purge.php:93
+msgid "Purge Varnish"
+msgstr "Vider Varnish"
+
+#. Plugin Name of the plugin/theme
+msgid "Varnish HTTP Purge"
+msgstr "Varnish HTTP Purge"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/extend/plugins/varnish-http-purge/"
+msgstr "http://wordpress.org/extend/plugins/varnish-http-purge/"
+
+#. Description of the plugin/theme
+msgid "Sends HTTP PURGE requests to URLs of changed posts/pages when they are modified."
+msgstr "Envoie des requêtes HTTP PURGE aux URL des articles/pages modifiés lorsqu'ils sont modifiés."
+
+#. Author of the plugin/theme
+msgid "Mika Epstein"
+msgstr "Mika Epstein"
+
+#. Author URI of the plugin/theme
+msgid "http://halfelf.org/"
+msgstr "http://halfelf.org/"

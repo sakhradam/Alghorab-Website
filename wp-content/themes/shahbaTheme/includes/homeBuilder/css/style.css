@@ -1,0 +1,57 @@
+.shahbaBuilder li{
+    list-style: none;
+    padding: 6px;
+    margin: 2px;
+    background: #EEE;
+}
+.shahbaBuilder ul,.shahbaBuilder ol {
+    padding-left: 15px;
+}
+.shahba-image-select img{
+    width: 67px!important;
+}
+.shahba-image-select{
+    height: 67px;
+    padding: 3px;
+    display: inline-block;
+}
+.shahba-image-select input{
+    display: none;
+}
+.shahbaImageRadioActive{
+    border: solid #3BCE46;
+}
+select{height: 26px;}
+.shahba_home_builder input,.shahba_home_builder select{width:200px;}
+label.home_builder_label{
+    width: 75px;
+    display: inline-block;
+    font-weight: bold;
+}
+.btn{
+background-color: #D3D3D3;
+border: none;
+color: rgb(70, 70, 70);
+padding: 5px 8px;
+}
+.btn-success{
+    background-color: #1FAD61;
+    color: rgb(255, 255, 255);
+}
+.btn-danger{
+    background-color: #D84833;
+    color: rgb(255, 255, 255);
+}
+.pull-right{
+    float: right;
+}
+.shahba_home_builder .block{
+    width: 550px;background: #EBEBEB;border: solid #E7E7E7;border-radius: 4px;padding: 13px;
+}
+.shahba_home_builder .block_title{
+    font-weight: bold;font-size: 16px;cursor: pointer;padding: 13px;margin: -13px;
+}
+.delete_block_btn{
+margin-top: -20px;
+margin-left: -4px;
+}

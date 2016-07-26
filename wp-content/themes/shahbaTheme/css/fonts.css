@@ -1,0 +1,56 @@
+@font-face {
+    font-family: JF_Flat;
+    src: url(../fonts/JF_Flat_regular.ttf);
+}
+@font-face {
+    font-family: OpenSans_Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: DroidKufi-Regular;
+    src: url(../fonts/DroidKufi-Regular.ttf);
+}
+@font-face {
+    font-family: DroidSans;
+    src: url(../fonts/DroidSans.ttf);
+}
+@font-face {
+    font-family: DroidSansArabic;
+    src: url(../fonts/DroidSansArabic_0.ttf);
+}
+@font-face {
+    font-family: GE_SS_Text_Light;
+    src: url(../fonts/GE_SS_Text_Light.otf);
+}
+@font-face {
+    font-family: GE_SS_Text_Medium;
+    src: url(../fonts/GE_SS_Text_Medium.otf);
+}
+@font-face {
+    font-family: GE_SS_Text_UltraLight;
+    src: url(../fonts/GE_SS_Text_UltraLight.otf);
+}
+@font-face {
+    font-family: GE_SS_Two_Light;
+    src: url(../fonts/GE_SS_Two_Light_0.otf);
+}
+@font-face {
+    font-family: GE_SS_Two_Medium;
+    src: url(../fonts/GE_SS_Two_Medium.otf);
+}
+@font-face {
+    font-family: AraJozoor-Regular;
+    src: url(../fonts/AraJozoor-Regular.ttf);
+}
